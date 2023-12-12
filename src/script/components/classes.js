@@ -16,10 +16,10 @@ export const classesData = {
             <a href="#" class="card-link">Students</a>
             <a href="#" class="card-link">Teachers</a>
           </div>
-                   <div class="buttons" style="position: absolute; top: 0; right: 0; padding: 10px; z-index: 1;">
-          <button onclick="(${index})">&#9998;</button> 
-          <button onclick="(${index})">&#128465;</button> 
-        </div>
+          <div class="buttons" style="position: absolute; top: 0; right: 0; padding: 10px; z-index: 1;">
+            <button class="edit-button" data-index="${index}">&#9998;</button> 
+            <button class="delete-button" data-index="${index}">&#128465;</button> 
+          </div>
         </div>
       `
         )
@@ -27,15 +27,3 @@ export const classesData = {
     </div>
   `,
 };
-
-// Sınıfı düzenleme fonksiyonu
-function editClass(index) {
-  // Burada sınıfı düzenleme işlemlerini gerçekleştirin
-  console.log("Edit class at index", index);
-}
-
-// Sınıfı silme fonksiyonu
-function deleteClass(index) {
-  // Burada sınıfı silme işlemlerini gerçekleştirin
-  console.log("Delete class at index", index);
-}

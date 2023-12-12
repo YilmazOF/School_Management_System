@@ -1,7 +1,7 @@
 export const footer = `
 <div> 
-<br> <br><br><br><br><br><br><br><br><br>
-<h1>HiCoder 23/24 LMS</h1>
+
+<h1 class ="mt-4" >HiCoder 23/24 LMS</h1>
 
 <p>
   This is a wider card with supporting text below as a natural lead-in to

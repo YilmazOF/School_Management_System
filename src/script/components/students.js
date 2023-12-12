@@ -29,9 +29,3 @@ export const studentsData = {
     </div>
   `,
 };
-
-// Öğrenciyi düzenleme fonksiyonu
-function editStudent(index) {
-  // Burada öğrenciyi düzenleme işlemlerini gerçekleştirin
-  console.log("Edit student at index", index);
-}

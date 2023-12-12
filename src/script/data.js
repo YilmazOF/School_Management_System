@@ -198,3 +198,5 @@ export const classes = [
     name: "Mary Johnson",
   },
 ];
+
+export const allLengths = [students.length, teachers.length, classes.length];
