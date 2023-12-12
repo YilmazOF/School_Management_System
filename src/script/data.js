@@ -21,112 +21,163 @@ export const students = [
     name: "Max ",
     surname: "Herman",
     profession: "Fullstack",
-    averageGrade: 5.4,
+    note1: 4,
+    note2: 3,
+    averageGrade: 0,
   },
   {
     name: "Antony",
     surname: "Egbe",
     profession: "Cloud",
-    averageGrade: 4.9,
+    note1: 4,
+    note2: 6,
+    averageGrade: 0,
   },
   {
     name: "Ali",
     surname: "Yilmaz",
     profession: "Web Developer",
-    averageGrade: 3.9,
+    note1: 8,
+    note2: 9,
+    averageGrade: 0,
   },
   {
     name: "Ayşe",
     surname: "Aydin",
     profession: "Mobile Developer",
-    averageGrade: 4.0,
+    note1: 10,
+    note2: 6,
+    averageGrade: 0,
   },
   {
     name: "Mehmet",
     surname: "Kemal",
     profession: "Systems Engineer",
-    averageGrade: 3.8,
+    note1: 8,
+    note2: 5,
+    averageGrade: 0,
   },
   {
     name: "Fatma",
     surname: "Demir",
     profession: "Data Scientist",
-    averageGrade: 3.6,
+    note1: 4,
+    note2: 7,
+    averageGrade: 0,
   },
   {
     name: "Mustafa",
     surname: "Yildirim",
     profession: "Artificial Intelligence Engineer",
-    averageGrade: 3.7,
+    note1: 2,
+    note2: 7,
+    averageGrade: 0,
   },
   {
     name: "Selma",
     surname: "Taş",
     profession: "Security Analyst",
-    averageGrade: 3.9,
+    note1: 4,
+    note2: 7,
+    averageGrade: 0,
   },
   {
     name: "Ahmet",
     surname: "Küçük",
     profession: "Network Engineer",
-    averageGrade: 4.0,
+    note1: 6,
+    note2: 8,
+    averageGrade: 0,
   },
   {
     name: "Emine",
-    surname: "Yıldız",
+    surname: "Yildiz",
     profession: "Game Developer",
-    averageGrade: 3.8,
+    note1: 8,
+    note2: 2,
+    averageGrade: 0,
   },
   {
     name: "Oğuz",
     surname: "Can",
     profession: "DevOps Engineer",
-    averageGrade: 3.6,
+    note1: 4,
+    note2: 6,
+    averageGrade: 0,
   },
   {
     name: "Zeynep",
     surname: "Gül",
     profession: "UI/UX Designer",
-    averageGrade: 3.7,
+    note1: 4,
+    note2: 9,
+    averageGrade: 0,
   },
   {
     name: "Erdem",
     surname: "Kara",
     profession: "Business Analyst",
-    averageGrade: 3.9,
+    note1: 4,
+    note2: 7,
+    averageGrade: 0,
   },
   {
     name: "Elif",
     surname: "Şahin",
     profession: "Test Engineer",
-    averageGrade: 4.0,
+    note1: 6,
+    note2: 7,
+    averageGrade: 0,
   },
   {
     name: "Cem",
     surname: "Yilmaz",
     profession: "Frontend Developer",
-    averageGrade: 3.8,
+    note1: 3,
+    note2: 8,
+    averageGrade: 0,
   },
   {
     name: "Demet",
     surname: "Çelik",
     profession: "Backend Developer",
-    averageGrade: 3.6,
+    note1: 4,
+    note2: 7,
+    averageGrade: 0,
   },
   {
     name: "Arda",
     surname: "Yilmaz",
     profession: "Database Engineer",
-    averageGrade: 3.7,
+    note1: 4,
+    note2: 7,
+    averageGrade: 0,
   },
   {
     name: "Yağmur",
-    surname: "Aydın",
+    surname: "Aydin",
     profession: "QA Engineer",
-    averageGrade: 3.9,
+    note1: 4,
+    note2: 7,
+    averageGrade: 0,
   },
 ];
+function calculateAverageGrades(students) {
+  students.map(function (student) {
+    // Notların ortalamasını hesapla ve nesneye ekle
+    student.averageGrade = (student.note1 + student.note2) / 2;
+  });
+}
 
+// Ortalama notları hesapla ve array'e ekle
+calculateAverageGrades(students);
+
+// Her bir öğrencinin bilgilerini, notlarını ve ortalama notlarını ekrana yazdır
+students.forEach(function (student) {
+  console.log(
+    `${student.name} ${student.surname} - Note 1: ${student.note1}, Note 2: ${student.note2}, Average Grade: ${student.averageGrade}`
+  );
+});
 export const classes = [
   {
     class: "Fullstack Class",
