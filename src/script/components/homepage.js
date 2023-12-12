@@ -15,7 +15,7 @@ export const homepageData = {
       </div>
       <div class="card" style="width: 18rem; text-align: center; display: flex; justify-content: center; align-items: center;">
         <div class="card-body">
-        <p class="card-text" style="font-size: 18px; margin: 0;">3 <br> number of classes</p>
+        <p class="card-text" style="font-size: 18px; margin: 0;">5 <br> number of classes</p>
         </div>
       </div>
     </div>
