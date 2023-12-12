@@ -83,7 +83,7 @@ export const students = [
   },
   {
     name: "Ahmet",
-    surname: "Küçük",
+    surname: "Kucuk",
     profession: "Network Engineer",
     note1: 6,
     note2: 8,
@@ -98,7 +98,7 @@ export const students = [
     averageGrade: 0,
   },
   {
-    name: "Oğuz",
+    name: "Oguz",
     surname: "Can",
     profession: "DevOps Engineer",
     note1: 4,
@@ -123,7 +123,7 @@ export const students = [
   },
   {
     name: "Elif",
-    surname: "Şahin",
+    surname: "Sahin",
     profession: "Test Engineer",
     note1: 6,
     note2: 7,
@@ -164,15 +164,12 @@ export const students = [
 ];
 function calculateAverageGrades(students) {
   students.map(function (student) {
-    // Notların ortalamasını hesapla ve nesneye ekle
     student.averageGrade = (student.note1 + student.note2) / 2;
   });
 }
 
-// Ortalama notları hesapla ve array'e ekle
 calculateAverageGrades(students);
 
-// Her bir öğrencinin bilgilerini, notlarını ve ortalama notlarını ekrana yazdır
 students.forEach(function (student) {
   console.log(
     `${student.name} ${student.surname} - Note 1: ${student.note1}, Note 2: ${student.note2}, Average Grade: ${student.averageGrade}`
