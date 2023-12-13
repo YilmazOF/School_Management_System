@@ -4,7 +4,7 @@ import { classes } from "../data.js";
 
 export const homepageData = {
   content: `
-    <h1 class="m-5">Welcome Mirijam</h1>
+    <h1 class="m-5">Welcome Mirjam</h1>
 
     <div class="container text-center">
       <div class="row">
