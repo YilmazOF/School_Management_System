@@ -138,25 +138,9 @@ export const students = [
     averageGrade: 0,
   },
   {
-    name: "Demet",
-    surname: "Çelik",
-    profession: "Backend Developer",
-    note1: 4,
-    note2: 7,
-    averageGrade: 0,
-  },
-  {
     name: "Arda",
     surname: "Yilmaz",
     profession: "Database Engineer",
-    note1: 4,
-    note2: 7,
-    averageGrade: 0,
-  },
-  {
-    name: "Yağmur",
-    surname: "Aydin",
-    profession: "QA Engineer",
     note1: 4,
     note2: 7,
     averageGrade: 0,
@@ -171,9 +155,7 @@ function calculateAverageGrades(students) {
 calculateAverageGrades(students);
 
 students.forEach(function (student) {
-  console.log(
-    `${student.name} ${student.surname} - Note 1: ${student.note1}, Note 2: ${student.note2}, Average Grade: ${student.averageGrade}`
-  );
+  console.log(`Average Grade: ${student.averageGrade}`);
 });
 export const classes = [
   {
@@ -198,5 +180,3 @@ export const classes = [
     name: "Mary Johnson",
   },
 ];
-
-export const allLengths = [students.length, teachers.length, classes.length];

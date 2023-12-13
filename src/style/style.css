@@ -23,7 +23,6 @@ footer {
 
 .card {
   width: 18rem;
-  /* İsteğe bağlı: margin: 0 10px; */
 }
 
 .fixed-bottom {
@@ -49,4 +48,18 @@ footer {
   max-width: 100%;
   height: auto;
   margin-bottom: 15px;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.footer-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  padding: 20px;
 }

@@ -22,8 +22,10 @@ export const teachersData = {
               <button onclick="deleteTeacher(${index})">&#128465;</button> <!-- Çöp kutusu simgesi -->
             </div>
           </div>
+          
         `;
       })}
+      
     </div>
   `,
 };

@@ -23,9 +23,11 @@ export const studentsData = {
           <button onclick="(${index})">&#128465;</button> 
         </div>
         </div>
+        
       `
         )
         .join("")}
+    
     </div>
   `,
 };
