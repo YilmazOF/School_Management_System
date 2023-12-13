@@ -4,6 +4,7 @@ export const studentsData = {
   content: `
     <h1>Students</h1>
     <div class="card-deck" style="display: flex; flex-wrap: wrap;">
+    
       ${students
         .map(
           (student, index) => `
@@ -19,15 +20,16 @@ export const studentsData = {
             }</p>
           </div>
           <div class="buttons" style="position: absolute; top: 0; right: 0; padding: 10px; z-index: 1;">
-          <button onclick="(${index})">&#9998;</button> 
-          <button onclick="(${index})">&#128465;</button> 
+            <button class="edit-button" data-index="${index}">&#9998;</button> 
+            <button class="delete-button" data-index="${index}">&#128465;</button> 
+          </div>
         </div>
-        </div>
-        
       `
         )
         .join("")}
-    
     </div>
+     <div>
+  <button id="add-button">Add Student</button>
+</div>
   `,
 };

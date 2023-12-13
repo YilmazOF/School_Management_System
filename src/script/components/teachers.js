@@ -4,6 +4,7 @@ export const teachersData = {
   content: `
     <h1>Teachers</h1>
     <div class="card-container" style="display: flex; flex-wrap: wrap; position: relative;">
+      
       ${teachers.map((teacher, index) => {
         return `
           <div class="card" style="width: 18rem; margin: 10px;">
@@ -18,14 +19,16 @@ export const teachersData = {
               <a href="#" class="card-link">Classes</a>
             </div>
             <div class="buttons" style="position: absolute; top: 0; right: 0; padding: 10px; z-index: 1;">
-              <button onclick="editTeacher(${index})">&#9998;</button> <!-- Kalem simgesi -->
-              <button onclick="deleteTeacher(${index})">&#128465;</button> <!-- Çöp kutusu simgesi -->
+              <button onclick="editTeacher(${index})">&#9998;</button>
+              <button onclick="deleteTeacher(${index})">&#128465;</button>
             </div>
-          </div>
-          
+            
+           </div>
         `;
       })}
-      
     </div>
+    <div>
+  <button id="add-button">Add Teacher</button>
+</div>
   `,
 };
